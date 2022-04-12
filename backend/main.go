@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
+
+func setupRoutes()
+ {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Simple Server")
+	})
+}
 
 func main() {
-	fmt.Println("Chatbot application started")
+	setupRoutes()
+	http.ListenAndServe(":8080", nil)
 }
