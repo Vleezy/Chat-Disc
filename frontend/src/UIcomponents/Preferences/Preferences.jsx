@@ -4,7 +4,7 @@ import '../Preferences/Preferences.css';
 function Preferences() {
 
     return (
-        <></>
+        <><h1>test</h1></>
     )
 }
 
