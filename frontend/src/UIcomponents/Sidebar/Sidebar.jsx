@@ -1,8 +1,14 @@
 import React from 'react';
 import SidebarChannel from '../SidebarChannel/SidebarChannel';
 import '../../UIcomponents/Sidebar/Sidebar.css';
+
+// MaterialUI Icons
 import { ExpandMore } from '@mui/icons-material';
 import AddIcon from '@mui/icons-material/Add';
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import CallIcon from "@mui/icons-material/Call";
+
 
 function Sidebar() {
     return (
@@ -30,7 +36,19 @@ function Sidebar() {
                 </div>
             </div>
 
+            <div className="sidebar__voice">
+            <SignalCellularAltIcon className="sidebar__voiceIcon" fontSize="large" />
+            <div className="sidebar__voiceInfo">
+            <h3> Voice Connected </h3>
+            <p> Stream </p>
+            </div>
+            <div className="sidebar__voiceIcons">
+            <InfoOutlinedIcon/>
+            <CallIcon/>
 
+            </div>
+
+            </div>
         </div>
     );
 }
