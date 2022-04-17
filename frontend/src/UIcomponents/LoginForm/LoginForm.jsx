@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import "./Login.css";
+import "./LoginForm.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -16,9 +17,9 @@ export default function LoginForm() {
   }
 
   return (
-    <div className="Login">
+    <div id="login">
       <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg" controlId="email" style={{textAlign:'center'}}>
           <Form.Label>Email</Form.Label>
           <Form.Control
             autoFocus
@@ -27,7 +28,7 @@ export default function LoginForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
-        <Form.Group size="lg" controlId="password">
+        <Form.Group size="lg" controlId="password" style={{textAlign:'center'}}>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
@@ -35,7 +36,7 @@ export default function LoginForm() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+        <Button block className="login__button" size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
       </Form>
