@@ -19,7 +19,7 @@ function App() {
 <Routes>
 
 {/* Default Initial Page */}
-<Route path="/" element={<Navigate replace to="/chat" />} />
+<Route path="/" element={<Navigate replace to="/login" />} />
 
 {/* Pages Routed */}
 <Route path="/login" element={<Login />} />

@@ -1,22 +1,30 @@
+
+
 #login{
-    left      : 50%;
-    top       : 50%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     font-size: 20px;
+
+    background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    border-radius: 5px;
+    padding: 3rem;
 }
 
 #login a{
-        color: #000;
-        text-decoration: none;
-        transition: color 0.25s;
-        font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.25s;
+    font-weight: 700;
 }
 
 #register__anchor{
     color: #fff;
     font-weight: 600;
 }
+
+/* Login Button */
 
 .btn.btn-primary {
     background-color: unset;
@@ -44,8 +52,16 @@
     transform: scale(0.9);
 }
 
+.bg__input{
+    background-color: #40464b !important;
+    border:gray !important;
+}
+
 .text__blue{
     color:#0d6efd !important;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
