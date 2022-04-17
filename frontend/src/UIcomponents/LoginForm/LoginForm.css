@@ -1,30 +1,52 @@
 #login{
-    /* display:flex; */
-    /* justify-content: center;
-    align-items: center; */
-
     left      : 50%;
     top       : 50%;
     position  : absolute;
     transform : translate(-50%, -50%);
     font-size: 20px;
-
 }
 
-Form.Group{
-    display: flex;
-    justify-content: space-evenly;
-
+#login a{
+        color: #000;
+        text-decoration: none;
+        transition: color 0.25s;
+        font-weight: 700;
 }
 
-.login__button{
-    width: 100%;
-    margin-top: 10px;
-    background-color: #4fb185 !important;
-    border-color:green 1px solid;
+#register__anchor{
+    color: #fff;
+    font-weight: 600;
 }
 
-.login__button:hover{
-    background-color: green !important;
-    border-color:green 1px solid;
+.btn.btn-primary {
+    background-color: unset;
+    background: linear-gradient(to top, #104fb4 50%, #2163b9 50%);
+    padding: 0.8rem;
+    border-color: #104fb4;
+    border-width: 4px;
+    border-style: solid;
 }
+
+.btn:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2365c8;
+    border-color: #216cbd;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+.text__blue{
+    color:#0d6efd !important;
+}
+
+
+
