@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../UIcomponents/Sidebar/Sidebar';;
+import Sidebar from '../UIcomponents/ChatSystem/Sidebar/Sidebar';;
 
 function Chat() {
   return (

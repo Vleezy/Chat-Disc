@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarChannel from '../SidebarChannel/SidebarChannel';
-import '../../UIcomponents/Sidebar/Sidebar.css';
+import '../Sidebar/Sidebar.css';
 
 // MaterialUI Icons
 import { ExpandMore } from '@mui/icons-material';
