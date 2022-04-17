@@ -60,9 +60,8 @@
 .text__blue{
     color:#0d6efd !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
-
 
 

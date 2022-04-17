@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from 'react-helmet';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./LoginForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,7 +24,7 @@ export default function LoginForm() {
     </Helmet>
 
     <div id="login" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-      <h1 className="text-center text-light">Chat Application</h1>
+      <h1 className="text-center text-light"><SmartToyIcon fontSize="x-large"/></h1>
       <Form onSubmit={handleSubmit} className="container h-100 w-100 d-flex flex-column">
         <Form.Group size="lg" controlId="email" className="d-flex h-100 flex-column justify-content-center mb-3">
           <Form.Label className="text-light">Email</Form.Label>

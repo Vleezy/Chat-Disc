@@ -1,6 +1,5 @@
 
 import LoginForm from "../UIcomponents/LoginForm/LoginForm";
-import "../Routes/Login.css";
 
 // <Route extact path="/login">
 //     <h1>
@@ -13,7 +12,7 @@ import "../Routes/Login.css";
 function Login() {
     
   return (
-      <div className="LoginPage" style={{background: '#2f3135'}}>
+      <div className="LoginPage">
        <LoginForm />
    </div>
   )
