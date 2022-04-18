@@ -1,5 +1,5 @@
 # Chat Bot Application
--   view Live: [Demo](https://devbot.tk) 
+-   View live: [Demo](https://devbot.tk) 
 
 
 ## Prerequisites
