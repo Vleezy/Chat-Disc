@@ -1,0 +1,89 @@
+#register__regForm, #modal__regForm{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+    background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+#register__regForm a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.25s;
+    font-weight: 700;
+}
+
+#register__anchor_regForm{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* About */
+#about__anchor{
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Register Button */
+
+.btn__regForm.btn-success {
+    background-color: unset;
+    background: linear-gradient(to top, #10a870 50%, #21b97a 50%);
+    padding: 0.8rem;
+    border-color: #137c4b;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.btn__regForm:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn__regForm:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+.btn__regForm:active {
+    transform: scale(0.9);
+}
+
+.bg__input_register{
+    background-color: #40464b !important;
+    border:gray !important;
+}
+
+.text__blue{
+    color:#0d6efd !important;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Modal */
+.modal-header,.modal-body,.modal-footer,.modal-content{
+    background-color: #2f3135;
+    color:white;
+}
+
+.modal-header .btn-close{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.modal-content{
+    background-color: #2f3135 !important;
+}
+
+.modal-header, .modal-footer{
+    border:none !important;
+}
+

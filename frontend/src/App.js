@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './UIcomponents/Dashboard/Dashboard';
-import Preferences from './UIcomponents/Preferences/Preferences';
+
+import RouteConfig from './Routes/RouteConfig/RouteConfig';
 
 function App() {
   return (
-    <div className="wrapper">
-      <Dashboard />
-      <Preferences />
-    </div>
+  <div>
+    <RouteConfig/>
+</div>
+
   );
 }
 
