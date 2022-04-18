@@ -45,7 +45,7 @@ export default function RegisterForm() {
                         className="p-3 text-light bg__input_register"
                         autoFocus
                         type="reg-username"
-                        value={reg-username}
+                        value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     />
                 </Form.Group>
@@ -55,7 +55,7 @@ export default function RegisterForm() {
                         className="p-3 text-light bg__input_register"
                         autoFocus
                         type="reg-email"
-                        value={reg-email}
+                        value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </Form.Group>
@@ -64,7 +64,7 @@ export default function RegisterForm() {
                     <Form.Control
                         className="p-3 text-light bg__input_register"
                         type="reg-password"
-                        value={reg-password}
+                        value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
