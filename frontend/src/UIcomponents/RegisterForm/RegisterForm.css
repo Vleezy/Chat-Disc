@@ -1,6 +1,6 @@
 
 
-#register__regForm{
+#register__regForm, #modal__regForm{
     left: 50%;
     top: 50%;
     position: absolute;
@@ -22,6 +22,12 @@
 #register__anchor_regForm{
     color: #fff;
     font-weight: 600;
+}
+
+/* About */
+#about__anchor{
+    font-weight: 700;
+    color: #fff;
 }
 
 /* Register Button */
@@ -63,3 +69,23 @@
     justify-content: space-around;
     
 }
+
+/* Modal */
+.modal-header,.modal-body,.modal-footer,.modal-content{
+    background-color: #2f3135;
+    color:white;
+}
+
+.modal-header .btn-close{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.modal-content{
+    background-color: #2f3135 !important;
+}
+
+.modal-header, .modal-footer{
+    border:none !important;
+}
+

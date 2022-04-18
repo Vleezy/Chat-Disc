@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from 'react-helmet';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Modal } from "react-bootstrap";
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./RegisterForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +12,11 @@ export default function RegisterForm() {
 const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const [show, setShow] = useState(false);
+
+  const aboutClose = () => setShow(false);
+  const aboutShow = () => setShow(true);
 
   function validateForm() {
     return email.length > 0 && password.length > 0;
@@ -68,9 +74,11 @@ const [username, setUsername] = useState("");
         </div>
         <div class="d-inline-flex justify-content-around mt-4 mt-xl-0 mt-lg-0 pb-3" >
           <div>
-            <a id="about__anchor" href="/">
+            <span id="about__anchor" 
+            href="" 
+            onClick={aboutShow}>
               About
-            </a>
+            </span>
           </div>
 
           <div>
@@ -84,6 +92,21 @@ const [username, setUsername] = useState("");
         </div>
       </Form>
     </div>
+
+    <Modal id="modal__regForm" show={show} onHide={aboutClose} backdrop="static" keyboard={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>About Us!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>This is a Bot Application created by Alonso and Vlad!</Modal.Body>
+        <Modal.Footer>
+          {/* <Button variant="secondary" onClick={aboutClose}>
+            Close
+          </Button> */}
+          {/* <Button variant="primary" onClick={aboutClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
 
   </>
   );
