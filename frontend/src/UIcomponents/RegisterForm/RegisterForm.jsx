@@ -39,32 +39,32 @@ export default function RegisterForm() {
                 <SmartToyIcon fontSize="x-large" />
             </h1>
             <Form onSubmit={handleSubmit} className="container h-100 w-100 d-flex flex-column">
-                <Form.Group size="lg" controlId="username" className="d-flex h-100 flex-column justify-content-center mb-3">
+                <Form.Group size="lg" controlId="reg-username" className="d-flex h-100 flex-column justify-content-center mb-3">
                     <Form.Label className="text-light">Username</Form.Label>
                     <Form.Control
                         className="p-3 text-light bg__input_register"
                         autoFocus
-                        type="username"
-                        value={username}
+                        type="reg-username"
+                        value={reg-username}
                         onChange={(e) => setUsername(e.target.value)}
                     />
                 </Form.Group>
-                <Form.Group size="lg" controlId="email" className="d-flex h-100 flex-column justify-content-center mb-3">
+                <Form.Group size="lg" controlId="reg-email" className="d-flex h-100 flex-column justify-content-center mb-3">
                     <Form.Label className="text-light">Email</Form.Label>
                     <Form.Control
                         className="p-3 text-light bg__input_register"
                         autoFocus
-                        type="email"
-                        value={email}
+                        type="reg-email"
+                        value={reg-email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </Form.Group>
-                <Form.Group size="lg" controlId="password" className="mb-3">
+                <Form.Group size="lg" controlId="reg-password" className="mb-3">
                     <Form.Label className="text-light">Password</Form.Label>
                     <Form.Control
                         className="p-3 text-light bg__input_register"
-                        type="password"
-                        value={password}
+                        type="reg-password"
+                        value={reg-password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
