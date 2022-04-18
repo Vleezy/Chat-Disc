@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./LoginForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Backdrop from "../Decoration/Backdrop";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -22,6 +23,8 @@ export default function LoginForm() {
     <Helmet>
       <style>{'body { background-color: #2f3135; }'}</style>
     </Helmet>
+
+    <Backdrop/>
 
     <div id="login" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
       <h1 className="text-center text-light">

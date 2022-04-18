@@ -5,8 +5,10 @@ import Button from "react-bootstrap/Button";
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./RegisterForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Backdrop from "../Decoration/Backdrop";
 
 export default function RegisterForm() {
+const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,14 +22,26 @@ export default function RegisterForm() {
 
   return (<>
     <Helmet>
-      <style>{'body { background-color: #2f3135; }'}</style>
+      <style>{'body { background-color: #2f3135; }, '}</style>
     </Helmet>
 
-    <div id="register" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+    <Backdrop/>
+
+    <div id="register__regForm" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
       <h1 className="text-center text-light">
           <SmartToyIcon fontSize="x-large"/>
           </h1>
       <Form onSubmit={handleSubmit} className="container h-100 w-100 d-flex flex-column">
+      <Form.Group size="lg" controlId="username" className="d-flex h-100 flex-column justify-content-center mb-3">
+          <Form.Label className="text-light">Username</Form.Label>
+          <Form.Control
+            className="p-3 text-light bg__input_register"
+            autoFocus
+            type="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </Form.Group>
         <Form.Group size="lg" controlId="email" className="d-flex h-100 flex-column justify-content-center mb-3">
           <Form.Label className="text-light">Email</Form.Label>
           <Form.Control
@@ -48,7 +62,7 @@ export default function RegisterForm() {
           />
         </Form.Group>
         <div className="d-flex justify-content-center mx-4">
-          <Button block className="btn btn-success w-100 mt-2 mb-3" size="lg" type="submit" disabled={!validateForm()}>
+          <Button block className="btn__regForm btn-success w-100 mt-2 mb-3" size="lg" type="submit" disabled={!validateForm()}>
             Register
           </Button>
         </div>
@@ -60,7 +74,7 @@ export default function RegisterForm() {
           </div>
 
           <div>
-            <a id="register__anchor" href="/">
+            <a id="register__anchor_regForm" href="/">
               <span class="text__blue">
                 Login
               </span>

@@ -1,34 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import { Route, Routes, Navigate } from "react-router-dom";
-// import Dashboard from './UIcomponents/Dashboard/Dashboard';
-// import Preferences from './UIcomponents/Preferences/Preferences';
-
-// Pages
-
-const Login = React.lazy(() => import('../src/Routes/Login'));
-const Register = React.lazy(() => import('../src/Routes/Register'));
-const Chat = React.lazy(() => import('../src/Routes/Chat'));
-
-// import Sidebar from './UIcomponents/Sidebar/Sidebar';
+import RouteConfig from './Routes/RouteConfig/RouteConfig';
 
 function App() {
   return (
   <div>
-{/* <Navigation /> */}
-<Routes>
-
-{/* Default Initial Page */}
-<Route path="/" element={<Navigate replace to="/login" />} />
-
-{/* Pages Routed */}
-<Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
-<Route path="/chat" element={<Chat />} />
-
-
-</Routes>
+    <RouteConfig/>
 </div>
 
   );

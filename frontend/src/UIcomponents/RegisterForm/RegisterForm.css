@@ -1,6 +1,6 @@
 
 
-#register{
+#register__regForm{
     left: 50%;
     top: 50%;
     position: absolute;
@@ -12,21 +12,21 @@
     padding: 3rem;
 }
 
-#register a{
+#register__regForm a{
     color: #fff;
     text-decoration: none;
     transition: color 0.25s;
     font-weight: 700;
 }
 
-#register__anchor{
+#register__anchor_regForm{
     color: #fff;
     font-weight: 600;
 }
 
 /* Register Button */
 
-.btn.btn-success {
+.btn__regForm.btn-success {
     background-color: unset;
     background: linear-gradient(to top, #10a870 50%, #21b97a 50%);
     padding: 0.8rem;
@@ -35,7 +35,7 @@
     border-style: solid;
 }
 
-.btn:hover {
+.btn__regForm:hover {
     box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
 }
 
@@ -45,10 +45,10 @@
     border-color: #198754;
 }
 
-.btn:hover {
+.btn__regForm:hover {
     box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
 }
-.btn:active {
+.btn__regForm:active {
     transform: scale(0.9);
 }
 
