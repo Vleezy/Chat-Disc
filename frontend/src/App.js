@@ -8,6 +8,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 // Pages
 
 const Login = React.lazy(() => import('../src/Routes/Login'));
+const Register = React.lazy(() => import('../src/Routes/Register'));
 const Chat = React.lazy(() => import('../src/Routes/Chat'));
 
 // import Sidebar from './UIcomponents/Sidebar/Sidebar';
@@ -23,6 +24,7 @@ function App() {
 
 {/* Pages Routed */}
 <Route path="/login" element={<Login />} />
+<Route path="/register" element={<Register />} />
 <Route path="/chat" element={<Chat />} />
 
 
