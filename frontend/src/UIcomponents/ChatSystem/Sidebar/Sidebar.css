@@ -48,9 +48,9 @@
   justify-content: space-between;
   align-items: center;
   color: gray;
-  background-color: #2f3135;
+  background-color: #202225;
   padding: 10px;
-  border: 1px solid gray;
+  border-bottom: 1px solid #292b2f;
 }
 
 .sidebar__voiceInfo {
