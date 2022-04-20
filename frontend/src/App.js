@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import RouteConfig from './Routes/RouteConfig/RouteConfig';
+import RouteConfig from './Configs/RouteConfig/RouteConfig';
 
 function App() {
   return (

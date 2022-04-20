@@ -1,10 +1,13 @@
+// REACT ROUTER CONFIGURATION PAGE
+// -------------------------------
+
 import React from 'react';
 import { Route, Routes, Navigate } from "react-router-dom";
 
 // Lazy Loading
-const Login = React.lazy(() => import('../Login'));
-const Register = React.lazy(() => import('../Register'));
-const Chat = React.lazy(() => import('../Chat'));
+const Login = React.lazy(() => import('../../Routes/Login'));
+const Register = React.lazy(() => import('../../Routes/Register'));
+const Chat = React.lazy(() => import('../../Routes/Chat/Chat'));
 
 function RouteConfig() {
   return (

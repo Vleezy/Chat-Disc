@@ -1,5 +1,5 @@
 import React from 'react';
-import '../SidebarChannel/SidebarChannel.css';
+import './SidebarChannel.css';
 
 
 function SidebarChannel({id, channelName}){
