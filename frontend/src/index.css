@@ -16,6 +16,6 @@ code {
     monospace;
 }
 
-html{
-  cursor: url(https://media-prd.coachella.com/content/coachella-2022/cursor.png),auto;
-}
+/* html{
+  cursor: url(../src/Assets/Images/cursor.png),auto;
+} */

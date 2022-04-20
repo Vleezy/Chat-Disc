@@ -1,3 +1,7 @@
+:root{
+    --toastify-color-dark: #121212;
+}
+
 #login{
     left: 50%;
     top: 50%;
@@ -17,10 +21,11 @@
     font-weight: 700;
 }
 
-#register__anchor{
+#register__anchor, #forgot__anchor{
     color: #fff;
     font-weight: 600;
 }
+
 
 /* Login Button */
 

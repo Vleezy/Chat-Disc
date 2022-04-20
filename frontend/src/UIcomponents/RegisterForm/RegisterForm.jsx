@@ -83,7 +83,7 @@ export default function RegisterForm() {
                     </div>
 
                     <div>
-                        <a id="register__anchor_regForm" href="/">
+                        <a id="register__anchor_regForm" href="/login">
                             <span class="text__blue">
                                 Login
                             </span>
