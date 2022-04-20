@@ -1,13 +1,14 @@
 import React from 'react';
 import Sidebar from '../../UIcomponents/ChatSystem/Sidebar/Sidebar';
+import System from '../../UIcomponents/ChatSystem/System/System';
 import '../Chat/Chat.css';
 
 function Chat() {
   return (
-    <div className='app'>
-    <Sidebar />
+    <div className='chat__app'>
+      <Sidebar />
 
-    {/* <Chat /> */}
+      <System />
     </div>
   )
 }
