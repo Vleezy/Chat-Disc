@@ -1,14 +1,34 @@
-#register__regForm, #modal__regForm{
+
+#register__regForm{
+    background: linear-gradient(90deg, #202225 50%, #292b2f 50%);
+    background: url(../../Assets/Images/bg-green.jpg) no-repeat center center fixed;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width:100%;
+}
+
+.register__wrapper{
     left: 50%;
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 20px;
-
     background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
     border-radius: 5px;
     padding: 3rem;
 }
+
+/* If you want it centered */
+/* #modal__regForm{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+} */
 
 #register__regForm a{
     color: #fff;
@@ -27,6 +47,7 @@
     font-weight: 700;
     color: #fff;
 }
+
 
 /* Register Button */
 
@@ -67,6 +88,7 @@
     justify-content: space-around;
     
 }
+
 
 /* Modal */
 .modal-header,.modal-body,.modal-footer,.modal-content{

@@ -3,13 +3,24 @@
 }
 
 #login{
+    background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    background: url(../../Assets/Images/bg-blue.jpg) no-repeat center center fixed;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width:100%;
+}
+
+.login__wrapper{
     left: 50%;
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 20px;
-
-    background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    background: linear-gradient(90deg,  #202225 50%, #292b2f 50%);
     border-radius: 5px;
     padding: 3rem;
 }
