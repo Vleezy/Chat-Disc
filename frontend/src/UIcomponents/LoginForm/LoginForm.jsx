@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import SmartToyIcon from '@mui/icons-material/SmartToy';
@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./LoginForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Backdrop from "../Decoration/Backdrop";
+// import Backdrop from "../Decoration/Backdrop";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -38,15 +38,16 @@ export default function LoginForm() {
 
 
   return (<>
-    <Helmet>
+    {/* <Helmet>
       <style>{'body { background-color: #2f3135;  }'}</style>
-    </Helmet>
+    </Helmet> */}
 
-    <Backdrop/>
+    {/* <Backdrop/> */}
 
     <div>
     <ToastContainer
-    position="bottom-left"
+    theme='dark'
+    position='bottom-right'
     autoClose={5000}
     closeOnClick
     rtl={false}
@@ -56,6 +57,7 @@ export default function LoginForm() {
     />
 
     <div id="login" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+      <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 login__wrapper">
       <h1 className="text-center text-light">
         <SmartToyIcon fontSize="x-large" />
       </h1>
@@ -102,7 +104,7 @@ export default function LoginForm() {
         </div>
       </Form>
     </div>
-
+</div>
 </div>
   </>
   );

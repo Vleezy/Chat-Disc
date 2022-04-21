@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Modal } from "react-bootstrap";
@@ -7,7 +7,7 @@ import Draggable from 'react-draggable';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./RegisterForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Backdrop from "../Decoration/Backdrop";
+// import Backdrop from "../Decoration/Backdrop";
 
 export default function RegisterForm() {
     const [username, setUsername] = useState("");
@@ -28,13 +28,14 @@ export default function RegisterForm() {
     }
 
     return (<>
-        <Helmet>
+        {/* <Helmet>
             <style>{'body { background-color: #2f3135; }, '}</style>
-        </Helmet>
+        </Helmet> */}
 
-        <Backdrop />
+        {/* <Backdrop /> */}
 
         <div id="register__regForm" className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 register__wrapper">
             <h1 className="text-center text-light">
                 <SmartToyIcon fontSize="x-large" />
             </h1>
@@ -52,7 +53,7 @@ export default function RegisterForm() {
                 <Form.Group size="lg" controlId="reg-email" className="d-flex h-100 flex-column justify-content-center mb-3">
                     <Form.Label className="text-light">Email</Form.Label>
                     <Form.Control
-                        className="p-3 text-light bg__input_register"
+                        className="p-3 text-light form__focus bg__input_register "
                         autoFocus
                         type="reg-email"
                         value={email}
@@ -92,6 +93,7 @@ export default function RegisterForm() {
 
                 </div>
             </Form>
+            </div>
         </div>
 
         <Draggable >
