@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Modal } from "react-bootstrap";
-import Draggable from 'react-draggable';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import "./RegisterForm.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -96,7 +95,6 @@ export default function RegisterForm() {
             </div>
         </div>
 
-        <Draggable >
             <Modal id="modal__regForm" show={show} onHide={aboutClose} backdrop="static" keyboard={false}>
                 <Modal.Header closeButton>
                     <Modal.Title>About Us!</Modal.Title>
@@ -111,7 +109,6 @@ export default function RegisterForm() {
           </Button> */}
                 </Modal.Footer>
             </Modal>
-        </Draggable>
     </>
     );
 }

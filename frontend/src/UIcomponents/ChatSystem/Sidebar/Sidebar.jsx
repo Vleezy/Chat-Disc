@@ -1,5 +1,5 @@
 import React from 'react';
-import SidebarChannel from '../SidebarChannel/SidebarChannel';
+import SidebarChannel from '../Sidebar/SidebarChannel/SidebarChannel';
 import './Sidebar.css';
 
 //Placeholder for user profile image
