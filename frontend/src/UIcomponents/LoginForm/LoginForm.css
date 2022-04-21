@@ -4,6 +4,8 @@
 
 #login{
     background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    background: url(../../Assets/Images/bg-blue.jpg) no-repeat center center fixed;
+    background-size: cover;
     left: 50%;
     top: 50%;
     position: absolute;

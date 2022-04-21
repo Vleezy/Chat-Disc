@@ -1,5 +1,8 @@
+
 #register__regForm{
     background: linear-gradient(90deg, #202225 50%, #292b2f 50%);
+    background: url(../../Assets/Images/bg-green.jpg) no-repeat center center fixed;
+    background-size: cover;
     left: 50%;
     top: 50%;
     position: absolute;
