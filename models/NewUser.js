@@ -33,4 +33,4 @@ let newUserSchema = new Schema({
     collection: 'newUsers'
   })
   
-module.exports = mongoose.model('New Users', newUserSchema)
+module.exports = mongoose.model('newUsers', newUserSchema)
