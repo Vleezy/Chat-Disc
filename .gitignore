@@ -1,0 +1,9 @@
+# Ignore the node modules foler
+node_modules/
+
+#Ignore OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# Ignore the keys.env files
+*.env
