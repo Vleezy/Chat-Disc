@@ -1,4 +1,4 @@
-# Chat Bot Application
+# 🤖 Chat Bot Application
 -   View live: [Demo]() 
 
 
