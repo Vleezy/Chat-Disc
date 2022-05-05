@@ -37,6 +37,7 @@ function validateRegisterInput(data) {
     } 
 
     // We might consider adding phone number to the registration. Maybe other info as well.
+    // In future releases, we can consider allowing users above a certain age to sign up only.
     return {
         errors,
         isValid: isEmpty(errors)
