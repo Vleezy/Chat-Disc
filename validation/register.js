@@ -1,0 +1,44 @@
+const Validator = require('validator');
+const isEmpty = require('is-empty');
+
+
+function validateRegisterInput(data) {
+    let errors = {};
+
+    // Convert empty fields to an empy string so we can validate.
+    data.firstName = !isEmpty(data.firstName) ? data.firstName : '';
+    data.lastName = !isEmpty(data.lastName) ? data.lastName : '';
+    data.emailAdd = !isEmpty(data.emailAdd) ? data.emailAdd : '';
+    
+   // The following fields might be used for a seperate page
+    data.userName = !isEmpty(data.userName) ? data.userName : '';
+    data.dateOfBirth = !isEmpty(data.dateOfBirth) ? data.dateOfBirth : '';
+    data.password = !isEmpty(data.password) ? data.password : '';
+
+    // Name Check Validator
+    if (Validator.isEmpty(data.firstName)) {
+        errors.firstName = "First Name is required.";
+    } else if (Validator.isEmpty(data.lastName)) {
+        errors.lastName = "Last Name is required.";
+    }
+
+    // Email Check - In future releases, I need functionality 
+    // that checks whether email is already being used by another user.
+    if (Validator.isEmpty(data.email)) {
+        errors.email = "Email field is required";
+      } else if (!Validator.isEmail(data.email)) {
+        errors.email = "Email is invalid";
+    }
+
+    // Username Check - In future releases, I need to make sure username is not already
+    // being used. Furthermore, I need to check it follows a specific format(havent decided yet)
+    if (Validator.isEmpty(data.userName)) {
+        errors.userName = "User name is required";
+    } 
+
+    // We might consider adding phone number to the registration. Maybe other info as well.
+    return {
+        errors,
+        isValid: isEmpty(errors)
+    }
+}
