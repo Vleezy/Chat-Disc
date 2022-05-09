@@ -36,6 +36,11 @@ function validateRegisterInput(data) {
         errors.userName = "User name is required";
     } 
 
+    // In future releases, we want to test out a password generator feature where your 
+    // password is randomly generated for you and then it can be store on a seperate 
+    // webapp (which we will create) to store all these randomly generated passwords. I 
+    // believe a benefit of this is not needing to remember all the passwords. 
+
     // We might consider adding phone number to the registration. Maybe other info as well.
     // In future releases, we can consider allowing users above a certain age to sign up only.
     return {
