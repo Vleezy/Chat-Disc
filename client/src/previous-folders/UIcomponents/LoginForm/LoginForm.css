@@ -1,0 +1,82 @@
+:root{
+    --toastify-color-dark: #121212;
+}
+
+#login{
+    background: linear-gradient(90deg, #292b2f 50%, #202225 50%);
+    background: url(../../Assets/Images/bg-blue.jpg) no-repeat center center fixed;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width:100%;
+}
+
+.login__wrapper{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background: linear-gradient(90deg,  #202225 50%, #292b2f 50%);
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+#login a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.25s;
+    font-weight: 700;
+}
+
+#register__anchor, #forgot__anchor{
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* Login Button */
+
+.btn.btn-primary {
+    background-color: unset;
+    background: linear-gradient(to top, #104fb4 50%, #2163b9 50%);
+    padding: 0.8rem;
+    border-color: #104fb4;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2365c8;
+    border-color: #216cbd;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 6 33 / 50%), 0 0 0 3px rgb(0 0 0 / 20%);
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+.bg__input_login{
+    background-color: #40464b !important;
+    border:gray !important;
+}
+
+.text__green{
+    color:#21b97a !important;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+

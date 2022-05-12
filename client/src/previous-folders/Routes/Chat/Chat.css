@@ -1,0 +1,7 @@
+.chat__app{
+    display: flex;
+}
+
+.login__warning{
+    color:#000 !important;
+}
